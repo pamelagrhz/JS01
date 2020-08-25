@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 12;
+  font-style: italic;
+  src: url("Roboto-ThinItalic-webfont.eot");
+  src: url("Roboto-ThinItalic-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-ThinItalic-webfont.woff") format("woff"), url("Roboto-ThinItalic-webfont.ttf") format("truetype"), url("Roboto-ThinItalic-webfont.svg#RobotoThinItalic") format("svg"); }
+
+/* line 14, src/sass/styles.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px; }
+
+/* line 15, src/sass/styles.scss */
+body p {
+  margin: 10px; }
+
+/* line 21, src/sass/styles.scss */
+body .card {
+  max-width: 1300px;
+  margin: 0 80px; }
+
+/* line 25, src/sass/styles.scss */
+body .card .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 70px;
+  height: 100px; }
+
+/* line 30, src/sass/styles.scss */
+body .card .header .logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 35, src/sass/styles.scss */
+body .card .header .logo img {
+  width: 285px;
+  height: 63px; }
+
+/* line 40, src/sass/styles.scss */
+body .card .header .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%; }
+
+/* line 45, src/sass/styles.scss */
+body .card .header .contact a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black !important; }
+
+/* line 53, src/sass/styles.scss */
+body .card .content .picture {
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 52% 0 0% 0;
+  background-size: cover;
+  background-position: center 0;
+  background-image: url("../../../src/img/foto-portada.jpg");
+  background-size: 100%; }
+
+/* line 64, src/sass/styles.scss */
+body .card .content .picture .pam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+/* line 68, src/sass/styles.scss */
+body .card .content .picture .pam a img {
+  width: 130px;
+  padding-bottom: 20%; }
+
+/* line 74, src/sass/styles.scss */
+body .card .content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 6% 9%; }
+
+/* line 78, src/sass/styles.scss */
+body .card .content .info .onLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 83, src/sass/styles.scss */
+body .card .content .info .onLine a {
+  width: 35%; }
+
+/* line 85, src/sass/styles.scss */
+body .card .content .info .onLine a img {
+  width: 100%; }
+
+/* line 89, src/sass/styles.scss */
+body .card .content .info .onLine .onLineTxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: .6vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2.5vw; }
+
+/* line 95, src/sass/styles.scss */
+body .card .content .info .onLine .onLineTxt .online {
+  font-weight: bold;
+  font-size: 3.5vw; }
+
+/* line 101, src/sass/styles.scss */
+body .card .content .info .details {
+  width: 50%; }
+
+/* line 103, src/sass/styles.scss */
+body .card .content .info .details .detailsContent {
+  font-size: 1.3vw;
+  line-height: 11px;
+  font-size: 1vw; }
+
+/* line 111, src/sass/styles.scss */
+body .card .advertisement {
+  background-color: red;
+  color: white; }
+
+/* line 114, src/sass/styles.scss */
+body .card .advertisement .advertisementContent {
+  padding: 4%; }
+
+/* line 116, src/sass/styles.scss */
+body .card .advertisement .advertisementContent .title {
+  font-size: 30px; }
+
+/* line 119, src/sass/styles.scss */
+body .card .advertisement .advertisementContent .list {
+  font-weight: bolder !important; }
+
+/* line 126, src/sass/styles.scss */
+body .card .programs table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+/* line 130, src/sass/styles.scss */
+body .card .programs table tr td iframe.loguito {
+  fill: #000; }
+
+/* line 133, src/sass/styles.scss */
+body .card .programs table tr td button.moreInfo {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 30px; }
+
+/* line 144, src/sass/styles.scss */
+body .card .idea img {
+  width: 100%; }
+
+/* line 147, src/sass/styles.scss */
+body .card .idea .appointment {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 30px; }
+
+/* line 154, src/sass/styles.scss */
+body .card .footer {
+  margin: 0 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* line 158, src/sass/styles.scss */
+body .card .footer .icons {
+  font-size: 24vw; }
+
+/* line 160, src/sass/styles.scss */
+body .card .footer .icons #facebook {
+  fill: firebrick; }

@@ -11,11 +11,11 @@ gulp.task("pug", function() {
                 pretty: true,
             })
         )
-        .pipe(gulp.dest("dist/css"));
+        .pipe(gulp.dest("dist/"));
 });
 gulp.task("sass", function() {
     return gulp
-        .src("p./src/sass/*.sass")
+        .src("./src/sass/*")
         .pipe(
             sass({
                 outputStyle: "expended",
@@ -32,6 +32,6 @@ gulp.task("sass", function() {
 });
 gulp.task("watch", function() {
     gulp.watch("./src/sass/*", ["sass"]);
-    gulp.watch("./src/pug/*.pug", ["pug"]);
+    gulp.watch("./src/pug/*", ["pug"]);
 });
 gulp.task("default", ["sass", "pug"]);
