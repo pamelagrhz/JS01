@@ -3,7 +3,7 @@ var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     sass = require("gulp-sass");
 gulp.task("pug", function() {
-    gulp
+    return gulp
         .src("./src/pug/*.pug")
         .pipe(
             pug({
@@ -14,7 +14,7 @@ gulp.task("pug", function() {
         .pipe(gulp.dest("dist/css"));
 });
 gulp.task("sass", function() {
-    gulp
+    return gulp
         .src("p./src/sass/*.sass")
         .pipe(
             sass({

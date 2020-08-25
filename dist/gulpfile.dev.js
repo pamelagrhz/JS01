@@ -6,13 +6,13 @@ var gulp = require("gulp"),
     sass = require("gulp-sass");
 
 gulp.task("pug", function () {
-  gulp.src("./src/pug/*.pug").pipe(pug({
+  return gulp.src("./src/pug/*.pug").pipe(pug({
     doctype: "html",
     pretty: true
   })).pipe(gulp.dest("dist/css"));
 });
 gulp.task("sass", function () {
-  gulp.src("p./src/sass/*.sass").pipe(sass({
+  return gulp.src("p./src/sass/*.sass").pipe(sass({
     outputStyle: "expended",
     sourceComments: true
   })).pipe(sass()).pipe(autoprefixer({
