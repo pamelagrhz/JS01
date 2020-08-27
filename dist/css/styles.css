@@ -48,10 +48,10 @@ body .card .header .logo {
           justify-content: flex-start; }
 
 /* line 38, src/sass/styles.scss */
-body .card .header .logo img {
+body .card .header .logo a {
   width: 70%; }
 
-/* line 42, src/sass/styles.scss */
+/* line 43, src/sass/styles.scss */
 body .card .header .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +64,7 @@ body .card .header .contact {
           align-items: center;
   width: 50%; }
 
-/* line 50, src/sass/styles.scss */
+/* line 51, src/sass/styles.scss */
 body .card .content .picture {
   width: 100%;
   height: 100%;
@@ -84,7 +84,7 @@ body .card .content .picture {
   background-image: url("../../src/img/foto-portada.jpg");
   background-size: 100%; }
 
-/* line 61, src/sass/styles.scss */
+/* line 62, src/sass/styles.scss */
 body .card .content .picture .pam {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,12 +95,12 @@ body .card .content .picture .pam {
       -ms-flex-align: end;
           align-items: flex-end; }
 
-/* line 65, src/sass/styles.scss */
+/* line 66, src/sass/styles.scss */
 body .card .content .picture .pam a img {
   width: 80%;
   padding-bottom: 20%; }
 
-/* line 71, src/sass/styles.scss */
+/* line 72, src/sass/styles.scss */
 body .card .content .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,7 +110,7 @@ body .card .content .info {
           justify-content: space-between;
   margin: 6% 9%; }
 
-/* line 75, src/sass/styles.scss */
+/* line 76, src/sass/styles.scss */
 body .card .content .info .onLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,15 +120,15 @@ body .card .content .info .onLine {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 80, src/sass/styles.scss */
+/* line 81, src/sass/styles.scss */
 body .card .content .info .onLine a {
   width: 35%; }
 
-/* line 82, src/sass/styles.scss */
+/* line 83, src/sass/styles.scss */
 body .card .content .info .onLine a img {
   width: 100%; }
 
-/* line 86, src/sass/styles.scss */
+/* line 87, src/sass/styles.scss */
 body .card .content .info .onLine .onLineTxt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,39 +143,39 @@ body .card .content .info .onLine .onLineTxt {
           flex-direction: column;
   font-size: 2.5vw; }
 
-/* line 92, src/sass/styles.scss */
+/* line 93, src/sass/styles.scss */
 body .card .content .info .onLine .onLineTxt .online {
   font-weight: bold;
   font-size: 3.5vw; }
 
-/* line 98, src/sass/styles.scss */
+/* line 99, src/sass/styles.scss */
 body .card .content .info .details {
   width: 50%; }
 
-/* line 100, src/sass/styles.scss */
+/* line 101, src/sass/styles.scss */
 body .card .content .info .details .detailsContent {
   font-size: 1.3vw;
   line-height: 11px;
   font-size: 1vw; }
 
-/* line 108, src/sass/styles.scss */
+/* line 109, src/sass/styles.scss */
 body .card .advertisement {
   background-color: red;
   color: white; }
 
-/* line 111, src/sass/styles.scss */
+/* line 112, src/sass/styles.scss */
 body .card .advertisement .advertisementContent {
   padding: 4%; }
 
-/* line 113, src/sass/styles.scss */
+/* line 114, src/sass/styles.scss */
 body .card .advertisement .advertisementContent .title {
   font-size: 3vw; }
 
-/* line 116, src/sass/styles.scss */
+/* line 117, src/sass/styles.scss */
 body .card .advertisement .advertisementContent .list {
   font-weight: bolder !important; }
 
-/* line 121, src/sass/styles.scss */
+/* line 122, src/sass/styles.scss */
 body .card .programs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +185,7 @@ body .card .programs {
       -ms-flex-direction: row;
           flex-direction: row; }
 
-/* line 124, src/sass/styles.scss */
+/* line 125, src/sass/styles.scss */
 body .card .programs .program {
   padding: 4%;
   display: -webkit-box;
@@ -198,39 +198,39 @@ body .card .programs .program {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-/* line 132, src/sass/styles.scss */
+/* line 133, src/sass/styles.scss */
 body .card .programs div.programDetail svg {
   width: 75%;
   fill: #000; }
 
-/* line 136, src/sass/styles.scss */
+/* line 137, src/sass/styles.scss */
 body .card .programs div.programDetail div.programInfo {
   margin: 10% 0; }
 
-/* line 140, src/sass/styles.scss */
+/* line 141, src/sass/styles.scss */
 body .card .programs button.moreInfo {
   background-color: black;
   color: white;
   border-radius: 8px;
   padding: 4% 0 4% 0; }
 
-/* line 149, src/sass/styles.scss */
+/* line 150, src/sass/styles.scss */
 body .idea img {
   width: 100%; }
 
-/* line 152, src/sass/styles.scss */
+/* line 153, src/sass/styles.scss */
 body .idea .details {
   margin: 0 3%; }
 
-/* line 154, src/sass/styles.scss */
+/* line 155, src/sass/styles.scss */
 body .idea .details .Logo {
   width: 30%; }
 
-/* line 157, src/sass/styles.scss */
+/* line 158, src/sass/styles.scss */
 body .idea .details .ideaDetails {
   padding: 0 0 4% 0; }
 
-/* line 160, src/sass/styles.scss */
+/* line 161, src/sass/styles.scss */
 body .idea .details .appointment {
   background-color: black;
   color: white;
@@ -243,11 +243,11 @@ body .idea .details .appointment {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 167, src/sass/styles.scss */
+/* line 168, src/sass/styles.scss */
 body .idea .details .appointment label {
   padding-left: 10px; }
 
-/* line 173, src/sass/styles.scss */
+/* line 174, src/sass/styles.scss */
 body .footer {
   margin: 10% 0 0;
   display: -webkit-box;
@@ -265,30 +265,30 @@ body .footer {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 180, src/sass/styles.scss */
+/* line 181, src/sass/styles.scss */
 body .footer p {
   font-size: 10px;
   color: gray; }
 
-/* line 188, src/sass/styles.scss */
+/* line 189, src/sass/styles.scss */
 .icons a {
   font-size: 23px; }
 
-/* line 190, src/sass/styles.scss */
+/* line 191, src/sass/styles.scss */
 .icons a .icon {
   padding: 6px; }
 
 @media (max-width: 920px) {
-  /* line 202, src/sass/styles.scss */
+  /* line 203, src/sass/styles.scss */
   body .card .content .picture {
     padding: 30% 0 0% 0; } }
 
 @media screen and (max-width: 600px) {
-  /* line 221, src/sass/styles.scss */
+  /* line 222, src/sass/styles.scss */
   body .card .header div.logo {
     margin: 0;
     width: 100%; }
-  /* line 226, src/sass/styles.scss */
+  /* line 227, src/sass/styles.scss */
   body .card .programs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,7 +303,7 @@ body .footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  /* line 231, src/sass/styles.scss */
+  /* line 232, src/sass/styles.scss */
   body .card .programs .program {
     padding: 2%;
     width: 80%;
