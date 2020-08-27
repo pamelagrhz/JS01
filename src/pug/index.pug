@@ -3,16 +3,12 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" type="text/css" href="./css/dist/styles.css")
+    link(rel="stylesheet" type="text/css" href="./css/styles.css")
     script(src="https://kit.fontawesome.com/8994a44ae2.js" crossorigin="anonymous")
     title Document
   body
     div.card
-      div.header
-        div.logo
-          img(src="../src/img/logo-juan-serrat.svg")
-        div.contact
-          a(href=("https://www.google.com")) Contacto
+      include header.pug
       div.content
         div.picture
           div.pam 
@@ -38,60 +34,6 @@ html(lang="en")
                 p Etología educación y entrenamiento animal 
                 p Perros de Asistencia
                 p  especializada del Labrador.
-      div.advertisement
-        div.advertisementContent
-          p.title Programas #[strong en linea ] 
-          br 
-          p.advertisementTxt Debido a la actual emergencia sanitaria generada en todo el mundo por el  #[strong SARS-CoV-2 ] , desarrollamos el proyecto Programas en línea.
-          p.advertisementTxt Nuestros programas en línea aportan beneficios directos a la calidad de vida y a la salud durante esta etapa de confinamiento. Manteniendo la calidad en nuestros tratamientos.
-          p.list Facilitan el aprendizaje
-          p.list Generan una interacción saludable 
-          p.list Contribuyen al bienestar físico, social y mental 
-          p.list Incrementan la estimulación sensorial 
-          p.list Mejoran el funcionamiento familiar
-          p.list Fomentan la integración
-          br
-          p Un proyecto pensado para estar cerca de ti
-      div.programs
-        table
-          tr
-            td
-              iframe.loguito(src="../src/img/logo-vinculo.svg") 
-            td 
-              iframe.loguito(src="../src/img/logo-vinculo.svg") 
-            td 
-              iframe.loguito(src="../src/img/logo-vinculo.svg") 
-          tr
-            td 
-              div.programDetail Programa de acompañamiento en línea. Psicoeducación y psicoterapia asistida.
-            td 
-              div.programDetail Educación, entrenamiento y modificación conductual en línea.
-            td 
-              div.programDetail Videoconsulta especializada en adopción, bienestar y tenencia responsable.
-          tr
-            td
-              button.moreInfo MAS INFORMACION 
-            td
-              button.moreInfo MAS INFORMACION 
-            td 
-              button.moreInfo MAS INFORMACION 
-      div.idea
-        isvg(src="../src/img/foto-idea.jpg" fill="black")
-        SVG
-          USE.loguito(src="../src/img/logo-vinculo.svg") 
-        P Debido a la actual emergencia sanitaria generada en todo el mundo por el  #[strong SARS-CoV-2 ]  Desarrollamos el proyecto Programas en línea. 
-        p Aportando beneficios directos a la calidad de vida y a la salud durante esta etapa de confinamiento. Manteniendo la calidad en nuestros tratamientos.
-        button.appointment 
-          i.fab.fa-whatsapp
-          label AGENDA UNA CITA
-      div.footer
-        div.icons
-          i.fas.fa-facebook.fa-lg#facebook
-          i.fab.fa-instagram
-          i.fab.fa-youtube
-          i.fab.fa-whatsapp
-        p Todos los derechos reservados 2020
-        p algo 
+ 
+      include footer.pug
         
-         
-          

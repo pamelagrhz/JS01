@@ -1,0 +1,48 @@
+include mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" type="text/css" href="./css/styles.css")
+    script(src="https://kit.fontawesome.com/8994a44ae2.js" crossorigin="anonymous")
+    title Document
+  body
+    div.card
+      include header.pug
+      
+      div.advertisement
+        div.advertisementContent
+          p.title Programas #[strong en linea ] 
+          br 
+          p.advertisementTxt Debido a la actual emergencia sanitaria generada en todo el mundo por el  #[strong SARS-CoV-2 ] , desarrollamos el proyecto Programas en línea.
+          p.advertisementTxt Nuestros programas en línea aportan beneficios directos a la calidad de vida y a la salud durante esta etapa de confinamiento. Manteniendo la calidad en nuestros tratamientos.
+          br
+          p.list Facilitan el aprendizaje
+          p.list Generan una interacción saludable 
+          p.list Contribuyen al bienestar físico, social y mental 
+          p.list Incrementan la estimulación sensorial 
+          p.list Mejoran el funcionamiento familiar
+          p.list Fomentan la integración
+          br
+          p Un proyecto pensado para estar cerca de ti
+      div.programs
+        div.program
+          div.programDetail
+            +vinculo 
+            div.programInfo Programa de acompañamiento en línea. Psicoeducación y psicoterapia asistida.
+          button.moreInfo MAS INFORMACION 
+        div.program
+          div.programDetail
+            +idea 
+            div.programInfo Educación, entrenamiento y modificación conductual en línea.
+          button.moreInfo MAS INFORMACION
+        div.program
+          div.programDetail
+            +proyectoPerro
+            div.programInfo Videoconsulta especializada en adopción, bienestar y tenencia responsable.
+          button.moreInfo MAS INFORMACION
+      include footer.pug
+        
+         
+          

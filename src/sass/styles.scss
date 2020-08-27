@@ -1,142 +1,147 @@
-@font-face {
-    font: {
-        family: 'Roboto';
-        weight: 12;
-        style: italic;
-    }
-    src: url('Roboto-ThinItalic-webfont.eot');
-    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('Roboto-ThinItalic-webfont.woff') format('woff'),
-    url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-    url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
-}
-
-body {
-    p {
-        margin: 10px;
-    }
-    font-family: 'Roboto',
-    sans-serif;
-    font-size: 12px;
-    .card {
-        max-width: 1300px;
-        margin: 0 80px;
-        //margin: 0 auto;
-        .header {
-            display: flex;
-            flex-direction: row;
-            margin: 0 70px;
-            height: 100px;
-            .logo {
-                width: 50%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                img {
-                    width: 285px;
-                    height: 63px;
-                }
-            }
-            .contact {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                width: 50%;
-                a {
-                    font-size: 15px;
-                    text-decoration: none;
-                    color: black!important;
-                }
-            }
+    @font-face {
+        font: {
+            family: 'Roboto';
+            weight: 12px;
+            style: italic;
         }
-        .content {
-            .picture {
-                width: 100%;
-                height: 100%;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 52% 0 0% 0;
-                background-size: cover;
-                background-position: center 0;
-                background-image: url("../../../src/img/foto-portada.jpg");
-                background-size: 100%;
-                .pam {
+        src: url('Roboto-ThinItalic-webfont.eot');
+        src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-ThinItalic-webfont.woff') format('woff'),
+        url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+        url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
+    }
+    
+    body {
+        a {
+            font-size: 15px;
+            text-decoration: none;
+            color: black !important;
+        }
+        p {
+            margin: 10px;
+        }
+        font-family: 'Roboto',
+        sans-serif;
+        font-size: 14px;
+        .card {
+            max-width: 1300px;
+            margin: 0 8%;
+            .header {
+                display: flex;
+                flex-direction: row;
+                margin: 0 5%;
+                height: 15%;
+                .logo {
+                    width: 50%;
                     display: flex;
-                    justify-content: space-around;
-                    align-items: flex-end;
-                    a img {
-                        width: 130px;
-                        padding-bottom: 20%;
+                    justify-content: flex-start;
+                    img {
+                        width: 70%;
                     }
                 }
-            }
-            .info {
-                display: flex;
-                justify-content: space-between;
-                margin: 6% 9%;
-                .onLine {
+                .contact {
                     display: flex;
-                    width: 50%;
+                    justify-content: flex-end;
                     align-items: center;
-                    ;
-                    a {
-                        width: 35%;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    .onLineTxt {
-                        display: flex;
-                        line-height: .6vw;
-                        justify-content: center;
-                        flex-direction: column;
-                        font-size: 2.5vw;
-                        .online {
-                            font-weight: bold;
-                            font-size: 3.5vw;
-                        }
-                    }
-                }
-                .details {
                     width: 50%;
-                    .detailsContent {
-                        font-size: 1.3vw;
-                        line-height: 11px;
-                        font-size: 1vw;
+                }
+            }
+            .content {
+                .picture {
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 48% 0 0% 0;
+                    background-size: cover;
+                    background-position: center 0;
+                    background-image: url("../../src/img/foto-portada.jpg");
+                    background-size: 100%;
+                    .pam {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: flex-end;
+                        a img {
+                            width: 80%;
+                            padding-bottom: 20%;
+                        }
+                    }
+                }
+                .info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 6% 9%;
+                    .onLine {
+                        display: flex;
+                        width: 50%;
+                        align-items: center;
+                        ;
+                        a {
+                            width: 35%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .onLineTxt {
+                            display: flex;
+                            line-height: .6vw;
+                            justify-content: center;
+                            flex-direction: column;
+                            font-size: 2.5vw;
+                            .online {
+                                font-weight: bold;
+                                font-size: 3.5vw;
+                            }
+                        }
+                    }
+                    .details {
+                        width: 50%;
+                        .detailsContent {
+                            font-size: 1.3vw;
+                            line-height: 11px;
+                            font-size: 1vw;
+                        }
                     }
                 }
             }
-        }
-        .advertisement {
-            background-color: red;
-            color: white;
-            .advertisementContent {
-                padding: 4%;
-                .title {
-                    font-size: 30px;
-                }
-                .list {
-                    font-weight: bolder!important;
+            .advertisement {
+                background-color: red;
+                color: white;
+                .advertisementContent {
+                    padding: 4%;
+                    .title {
+                        font-size: 3vw;
+                    }
+                    .list {
+                        font-weight: bolder !important;
+                    }
                 }
             }
-        }
-        .programs {
-            table {
-                tr {
+            .programs {
+                display: flex;
+                flex-direction: row;
+                .program {
+                    padding: 4%;
                     display: flex;
                     justify-content: space-around;
-                    td {
-                        iframe.loguito {
-                            fill: #000;
-                        }
-                        button.moreInfo {
-                            background-color: black;
-                            color: white;
-                            border-radius: 8px;
-                            padding: 10px 30px;
-                        }
+                    //padding: 10%;
+                    flex-direction: column;
+                }
+                div.programDetail {
+                    svg {
+                        width: 75%;
+                        fill: #000;
                     }
+                    div.programInfo {
+                        margin: 10% 0;
+                    }
+                }
+                button.moreInfo {
+                    background-color: black;
+                    color: white;
+                    border-radius: 8px;
+                    padding: 4% 0 4% 0;
                 }
             }
         }
@@ -144,23 +149,93 @@ body {
             img {
                 width: 100%;
             }
-            .appointment {
-                background-color: black;
-                color: white;
-                border-radius: 8px;
-                padding: 10px 30px;
+            .details {
+                margin: 0 3%;
+                .Logo {
+                    width: 30%;
+                }
+                .ideaDetails {
+                    padding: 0 0 4% 0;
+                }
+                .appointment {
+                    background-color: black;
+                    color: white;
+                    border-radius: 8px;
+                    padding: 10px 30px;
+                    display: flex;
+                    align-items: center;
+                    label {
+                        padding-left: 10px;
+                    }
+                }
             }
         }
         .footer {
-            margin: 0 70px;
+            margin: 10% 0 0;
             display: flex;
             justify-content: center;
-            .icons {
-                font-size: 24vw;
-                #facebook {
-                    fill: firebrick;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-size: 10px;
+                color: gray;
+            }
+        }
+    }
+    
+    .icons {
+        a {
+            font-size: 23px;
+            .icon {
+                padding: 6px;
+            }
+        }
+    }
+    
+    //Responsive
+    @media (max-width: 920px) {
+        //Modificar el tamaño de iconos e imagen (picture)de fondo 
+        body {
+            .card {
+                .content {
+                    .picture {
+                        padding: 30% 0 0% 0;
+                    }
+                }
+                .programs {
+                    .program {
+                        button.moreInfo {}
+                    }
                 }
             }
         }
     }
-}
+    
+    @media screen and (max-width: 600px) {
+        //modificar headder
+        //Modificar tamaño de icons 
+        body {
+            .card {
+                .header {
+                    div.logo {
+                        margin: 0;
+                        width: 100%;
+                    }
+                }
+                .programs {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .program {
+                        padding: 2%;
+                        width: 80%;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+    }

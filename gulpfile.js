@@ -34,4 +34,4 @@ gulp.task("watch", function() {
     gulp.watch("./src/sass/*", ["sass"]);
     gulp.watch("./src/pug/*", ["pug"]);
 });
-gulp.task("default", ["sass", "pug"]);
+gulp.task("default", ["sass", "pug", "watch"]);

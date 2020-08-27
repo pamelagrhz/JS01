@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto';
-  font-weight: 12;
+  font-weight: 12px;
   font-style: italic;
   src: url("Roboto-ThinItalic-webfont.eot");
   src: url("Roboto-ThinItalic-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-ThinItalic-webfont.woff") format("woff"), url("Roboto-ThinItalic-webfont.ttf") format("truetype"), url("Roboto-ThinItalic-webfont.svg#RobotoThinItalic") format("svg"); }
@@ -8,18 +8,24 @@
 /* line 14, src/sass/styles.scss */
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px; }
+  font-size: 14px; }
 
 /* line 15, src/sass/styles.scss */
+body a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black !important; }
+
+/* line 20, src/sass/styles.scss */
 body p {
   margin: 10px; }
 
-/* line 21, src/sass/styles.scss */
+/* line 26, src/sass/styles.scss */
 body .card {
   max-width: 1300px;
-  margin: 0 80px; }
+  margin: 0 8%; }
 
-/* line 25, src/sass/styles.scss */
+/* line 29, src/sass/styles.scss */
 body .card .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,10 +34,10 @@ body .card .header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 70px;
-  height: 100px; }
+  margin: 0 5%;
+  height: 15%; }
 
-/* line 30, src/sass/styles.scss */
+/* line 34, src/sass/styles.scss */
 body .card .header .logo {
   width: 50%;
   display: -webkit-box;
@@ -39,17 +45,13 @@ body .card .header .logo {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+          justify-content: flex-start; }
 
-/* line 35, src/sass/styles.scss */
+/* line 38, src/sass/styles.scss */
 body .card .header .logo img {
-  width: 285px;
-  height: 63px; }
+  width: 70%; }
 
-/* line 40, src/sass/styles.scss */
+/* line 42, src/sass/styles.scss */
 body .card .header .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,13 +64,7 @@ body .card .header .contact {
           align-items: center;
   width: 50%; }
 
-/* line 45, src/sass/styles.scss */
-body .card .header .contact a {
-  font-size: 15px;
-  text-decoration: none;
-  color: black !important; }
-
-/* line 53, src/sass/styles.scss */
+/* line 50, src/sass/styles.scss */
 body .card .content .picture {
   width: 100%;
   height: 100%;
@@ -82,13 +78,13 @@ body .card .content .picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 52% 0 0% 0;
+  padding: 48% 0 0% 0;
   background-size: cover;
   background-position: center 0;
-  background-image: url("../../../src/img/foto-portada.jpg");
+  background-image: url("../../src/img/foto-portada.jpg");
   background-size: 100%; }
 
-/* line 64, src/sass/styles.scss */
+/* line 61, src/sass/styles.scss */
 body .card .content .picture .pam {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,12 +95,12 @@ body .card .content .picture .pam {
       -ms-flex-align: end;
           align-items: flex-end; }
 
-/* line 68, src/sass/styles.scss */
+/* line 65, src/sass/styles.scss */
 body .card .content .picture .pam a img {
-  width: 130px;
+  width: 80%;
   padding-bottom: 20%; }
 
-/* line 74, src/sass/styles.scss */
+/* line 71, src/sass/styles.scss */
 body .card .content .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +110,7 @@ body .card .content .info {
           justify-content: space-between;
   margin: 6% 9%; }
 
-/* line 78, src/sass/styles.scss */
+/* line 75, src/sass/styles.scss */
 body .card .content .info .onLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,15 +120,15 @@ body .card .content .info .onLine {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 83, src/sass/styles.scss */
+/* line 80, src/sass/styles.scss */
 body .card .content .info .onLine a {
   width: 35%; }
 
-/* line 85, src/sass/styles.scss */
+/* line 82, src/sass/styles.scss */
 body .card .content .info .onLine a img {
   width: 100%; }
 
-/* line 89, src/sass/styles.scss */
+/* line 86, src/sass/styles.scss */
 body .card .content .info .onLine .onLineTxt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,82 +143,177 @@ body .card .content .info .onLine .onLineTxt {
           flex-direction: column;
   font-size: 2.5vw; }
 
-/* line 95, src/sass/styles.scss */
+/* line 92, src/sass/styles.scss */
 body .card .content .info .onLine .onLineTxt .online {
   font-weight: bold;
   font-size: 3.5vw; }
 
-/* line 101, src/sass/styles.scss */
+/* line 98, src/sass/styles.scss */
 body .card .content .info .details {
   width: 50%; }
 
-/* line 103, src/sass/styles.scss */
+/* line 100, src/sass/styles.scss */
 body .card .content .info .details .detailsContent {
   font-size: 1.3vw;
   line-height: 11px;
   font-size: 1vw; }
 
-/* line 111, src/sass/styles.scss */
+/* line 108, src/sass/styles.scss */
 body .card .advertisement {
   background-color: red;
   color: white; }
 
-/* line 114, src/sass/styles.scss */
+/* line 111, src/sass/styles.scss */
 body .card .advertisement .advertisementContent {
   padding: 4%; }
 
-/* line 116, src/sass/styles.scss */
+/* line 113, src/sass/styles.scss */
 body .card .advertisement .advertisementContent .title {
-  font-size: 30px; }
+  font-size: 3vw; }
 
-/* line 119, src/sass/styles.scss */
+/* line 116, src/sass/styles.scss */
 body .card .advertisement .advertisementContent .list {
   font-weight: bolder !important; }
 
-/* line 126, src/sass/styles.scss */
-body .card .programs table tr {
+/* line 121, src/sass/styles.scss */
+body .card .programs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+/* line 124, src/sass/styles.scss */
+body .card .programs .program {
+  padding: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
-/* line 130, src/sass/styles.scss */
-body .card .programs table tr td iframe.loguito {
+/* line 132, src/sass/styles.scss */
+body .card .programs div.programDetail svg {
+  width: 75%;
   fill: #000; }
 
-/* line 133, src/sass/styles.scss */
-body .card .programs table tr td button.moreInfo {
+/* line 136, src/sass/styles.scss */
+body .card .programs div.programDetail div.programInfo {
+  margin: 10% 0; }
+
+/* line 140, src/sass/styles.scss */
+body .card .programs button.moreInfo {
   background-color: black;
   color: white;
   border-radius: 8px;
-  padding: 10px 30px; }
+  padding: 4% 0 4% 0; }
 
-/* line 144, src/sass/styles.scss */
-body .card .idea img {
+/* line 149, src/sass/styles.scss */
+body .idea img {
   width: 100%; }
 
-/* line 147, src/sass/styles.scss */
-body .card .idea .appointment {
+/* line 152, src/sass/styles.scss */
+body .idea .details {
+  margin: 0 3%; }
+
+/* line 154, src/sass/styles.scss */
+body .idea .details .Logo {
+  width: 30%; }
+
+/* line 157, src/sass/styles.scss */
+body .idea .details .ideaDetails {
+  padding: 0 0 4% 0; }
+
+/* line 160, src/sass/styles.scss */
+body .idea .details .appointment {
   background-color: black;
   color: white;
   border-radius: 8px;
-  padding: 10px 30px; }
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-/* line 154, src/sass/styles.scss */
-body .card .footer {
-  margin: 0 70px;
+/* line 167, src/sass/styles.scss */
+body .idea .details .appointment label {
+  padding-left: 10px; }
+
+/* line 173, src/sass/styles.scss */
+body .footer {
+  margin: 10% 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-/* line 158, src/sass/styles.scss */
-body .card .footer .icons {
-  font-size: 24vw; }
+/* line 180, src/sass/styles.scss */
+body .footer p {
+  font-size: 10px;
+  color: gray; }
 
-/* line 160, src/sass/styles.scss */
-body .card .footer .icons #facebook {
-  fill: firebrick; }
+/* line 188, src/sass/styles.scss */
+.icons a {
+  font-size: 23px; }
+
+/* line 190, src/sass/styles.scss */
+.icons a .icon {
+  padding: 6px; }
+
+@media (max-width: 920px) {
+  /* line 202, src/sass/styles.scss */
+  body .card .content .picture {
+    padding: 30% 0 0% 0; } }
+
+@media screen and (max-width: 600px) {
+  /* line 221, src/sass/styles.scss */
+  body .card .header div.logo {
+    margin: 0;
+    width: 100%; }
+  /* line 226, src/sass/styles.scss */
+  body .card .programs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 231, src/sass/styles.scss */
+  body .card .programs .program {
+    padding: 2%;
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
