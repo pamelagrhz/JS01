@@ -120,15 +120,15 @@ body .card .content .info .onLine {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 81, src/sass/styles.scss */
+/* line 80, src/sass/styles.scss */
 body .card .content .info .onLine a {
   width: 35%; }
 
-/* line 83, src/sass/styles.scss */
+/* line 82, src/sass/styles.scss */
 body .card .content .info .onLine a img {
   width: 100%; }
 
-/* line 87, src/sass/styles.scss */
+/* line 86, src/sass/styles.scss */
 body .card .content .info .onLine .onLineTxt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,39 +143,39 @@ body .card .content .info .onLine .onLineTxt {
           flex-direction: column;
   font-size: 2.5vw; }
 
-/* line 93, src/sass/styles.scss */
+/* line 92, src/sass/styles.scss */
 body .card .content .info .onLine .onLineTxt .online {
   font-weight: bold;
   font-size: 3.5vw; }
 
-/* line 99, src/sass/styles.scss */
+/* line 98, src/sass/styles.scss */
 body .card .content .info .details {
   width: 50%; }
 
-/* line 101, src/sass/styles.scss */
+/* line 100, src/sass/styles.scss */
 body .card .content .info .details .detailsContent {
   font-size: 1.3vw;
   line-height: 11px;
   font-size: 1vw; }
 
-/* line 109, src/sass/styles.scss */
+/* line 108, src/sass/styles.scss */
 body .card .advertisement {
   background-color: red;
   color: white; }
 
-/* line 112, src/sass/styles.scss */
+/* line 111, src/sass/styles.scss */
 body .card .advertisement .advertisementContent {
   padding: 4%; }
 
-/* line 114, src/sass/styles.scss */
+/* line 113, src/sass/styles.scss */
 body .card .advertisement .advertisementContent .title {
-  font-size: 3vw; }
+  font-size: 50px; }
 
-/* line 117, src/sass/styles.scss */
+/* line 116, src/sass/styles.scss */
 body .card .advertisement .advertisementContent .list {
   font-weight: bolder !important; }
 
-/* line 122, src/sass/styles.scss */
+/* line 121, src/sass/styles.scss */
 body .card .programs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,8 +185,9 @@ body .card .programs {
       -ms-flex-direction: row;
           flex-direction: row; }
 
-/* line 125, src/sass/styles.scss */
+/* line 124, src/sass/styles.scss */
 body .card .programs .program {
+  width: 25%;
   padding: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,39 +199,41 @@ body .card .programs .program {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-/* line 133, src/sass/styles.scss */
-body .card .programs div.programDetail svg {
-  width: 75%;
-  fill: #000; }
+/* line 131, src/sass/styles.scss */
+body .card .programs .program div.programDetail svg {
+  width: 75%; }
 
-/* line 137, src/sass/styles.scss */
-body .card .programs div.programDetail div.programInfo {
+/* line 134, src/sass/styles.scss */
+body .card .programs .program div.programDetail div.programInfo {
   margin: 10% 0; }
 
-/* line 141, src/sass/styles.scss */
-body .card .programs button.moreInfo {
+/* line 138, src/sass/styles.scss */
+body .card .programs .program button.moreInfo {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   background-color: black;
   color: white;
   border-radius: 8px;
-  padding: 4% 0 4% 0; }
+  padding: 4px 0 4px 0; }
 
-/* line 150, src/sass/styles.scss */
+/* line 149, src/sass/styles.scss */
 body .idea img {
   width: 100%; }
 
-/* line 153, src/sass/styles.scss */
+/* line 152, src/sass/styles.scss */
 body .idea .details {
   margin: 0 3%; }
 
-/* line 155, src/sass/styles.scss */
+/* line 154, src/sass/styles.scss */
 body .idea .details .Logo {
   width: 30%; }
 
-/* line 158, src/sass/styles.scss */
+/* line 157, src/sass/styles.scss */
 body .idea .details .ideaDetails {
   padding: 0 0 4% 0; }
 
-/* line 161, src/sass/styles.scss */
+/* line 160, src/sass/styles.scss */
 body .idea .details .appointment {
   background-color: black;
   color: white;
@@ -243,11 +246,11 @@ body .idea .details .appointment {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 168, src/sass/styles.scss */
+/* line 167, src/sass/styles.scss */
 body .idea .details .appointment label {
   padding-left: 10px; }
 
-/* line 174, src/sass/styles.scss */
+/* line 173, src/sass/styles.scss */
 body .footer {
   margin: 10% 0 0;
   display: -webkit-box;
@@ -265,30 +268,41 @@ body .footer {
       -ms-flex-align: center;
           align-items: center; }
 
-/* line 181, src/sass/styles.scss */
+/* line 180, src/sass/styles.scss */
 body .footer p {
   font-size: 10px;
   color: gray; }
 
-/* line 189, src/sass/styles.scss */
+/* line 188, src/sass/styles.scss */
 .icons a {
   font-size: 23px; }
 
-/* line 191, src/sass/styles.scss */
+/* line 190, src/sass/styles.scss */
 .icons a .icon {
   padding: 6px; }
 
 @media (max-width: 920px) {
-  /* line 203, src/sass/styles.scss */
+  /* line 202, src/sass/styles.scss */
   body .card .content .picture {
     padding: 30% 0 0% 0; } }
 
+@media screen and (max-width: 800px) {
+  /* line 213, src/sass/styles.scss */
+  .advertisement .advertisementContent .title {
+    font-size: 35px !important; } }
+
 @media screen and (max-width: 600px) {
-  /* line 222, src/sass/styles.scss */
+  /* line 223, src/sass/styles.scss */
+  body .card .header {
+    height: 30% !important; }
+  /* line 225, src/sass/styles.scss */
   body .card .header div.logo {
     margin: 0;
     width: 100%; }
-  /* line 227, src/sass/styles.scss */
+  /* line 232, src/sass/styles.scss */
+  body .card .advertisement .advertisementContent .title {
+    font-size: 25px !important; }
+  /* line 237, src/sass/styles.scss */
   body .card .programs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,7 +317,7 @@ body .footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  /* line 232, src/sass/styles.scss */
+  /* line 242, src/sass/styles.scss */
   body .card .programs .program {
     padding: 2%;
     width: 80%;

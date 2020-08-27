@@ -77,7 +77,6 @@
                         display: flex;
                         width: 50%;
                         align-items: center;
-                        ;
                         a {
                             width: 35%;
                             img {
@@ -112,7 +111,7 @@
                 .advertisementContent {
                     padding: 4%;
                     .title {
-                        font-size: 3vw;
+                        font-size: 50px;
                     }
                     .list {
                         font-weight: bolder !important;
@@ -123,26 +122,26 @@
                 display: flex;
                 flex-direction: row;
                 .program {
+                    width: 25%;
                     padding: 4%;
                     display: flex;
                     justify-content: space-around;
-                    //padding: 10%;
                     flex-direction: column;
-                }
-                div.programDetail {
-                    svg {
-                        width: 75%;
-                        fill: #000;
+                    div.programDetail {
+                        svg {
+                            width: 75%;
+                        }
+                        div.programInfo {
+                            margin: 10% 0;
+                        }
                     }
-                    div.programInfo {
-                        margin: 10% 0;
+                    button.moreInfo {
+                        align-items: flex-end;
+                        background-color: black;
+                        color: white;
+                        border-radius: 8px;
+                        padding: 4px 0 4px 0;
                     }
-                }
-                button.moreInfo {
-                    background-color: black;
-                    color: white;
-                    border-radius: 8px;
-                    padding: 4% 0 4% 0;
                 }
             }
         }
@@ -204,24 +203,35 @@
                         padding: 30% 0 0% 0;
                     }
                 }
-                .programs {
-                    .program {
-                        button.moreInfo {}
-                    }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .advertisement {
+            .advertisementContent {
+                .title {
+                    font-size: 35px!important;
                 }
             }
         }
     }
     
     @media screen and (max-width: 600px) {
-        //modificar headder
-        //Modificar tamaño de icons 
         body {
             .card {
                 .header {
+                    height: 30%!important;
                     div.logo {
                         margin: 0;
                         width: 100%;
+                    }
+                }
+                .advertisement {
+                    .advertisementContent {
+                        .title {
+                            font-size: 25px!important;
+                        }
                     }
                 }
                 .programs {
