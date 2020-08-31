@@ -1,7 +1,8 @@
 var gulp = require("gulp"),
     pug = require("gulp-pug"),
     autoprefixer = require("gulp-autoprefixer"),
-    sass = require("gulp-sass");
+    sass = require("gulp-sass"),
+    browsersync = require('browser-sync');
 gulp.task("pug", function() {
     return gulp
         .src("./src/pug/*.pug")
@@ -18,7 +19,6 @@ gulp.task("sass", function() {
         .src("./src/sass/*")
         .pipe(
             sass({
-                outputStyle: "expended",
                 sourceComments: true,
             })
         )
@@ -30,8 +30,15 @@ gulp.task("sass", function() {
         )
         .pipe(gulp.dest("./dist/css"));
 });
-gulp.task("watch", function() {
-    gulp.watch("./src/sass/*", ["sass"]);
-    gulp.watch("./src/pug/*", ["pug"]);
+gulp.task('browserSync', function() {
+    browsersync.init({
+        server: {
+            baseDir: "dist/"
+        }
+    });
 });
-gulp.task("default", ["sass", "pug", "watch"]);
+gulp.task("watch", function() {
+    gulp.watch("./src/sass/*", ["sass"], browsersync.reload);
+    gulp.watch("./src/pug/*", ["pug"], browsersync.reload);
+});
+gulp.task("default", ["sass", "pug", "browserSync", "watch"]);

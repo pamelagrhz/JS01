@@ -1,48 +1,51 @@
-include mixins.pug
-<!DOCTYPE html>
-html(lang="en")
+include includes/mixins.pug
+doctype html
+html(lang="es")
   head
     meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale1=1.0")
     link(rel="stylesheet" type="text/css" href="./css/styles.css")
     script(src="https://kit.fontawesome.com/8994a44ae2.js" crossorigin="anonymous")
-    title Document
+    title Juan Serrat
   body
     div.card
-      include header.pug
+      include includes/header.pug
       
       div.advertisement
-        div.advertisementContent
-          p.title Programas #[strong en linea ] 
-          br 
-          p.advertisementTxt Debido a la actual emergencia sanitaria generada en todo el mundo por el  #[strong SARS-CoV-2 ] , desarrollamos el proyecto Programas en línea.
-          p.advertisementTxt Nuestros programas en línea aportan beneficios directos a la calidad de vida y a la salud durante esta etapa de confinamiento. Manteniendo la calidad en nuestros tratamientos.
-          br
-          p.list Facilitan el aprendizaje
-          p.list Generan una interacción saludable 
-          p.list Contribuyen al bienestar físico, social y mental 
-          p.list Incrementan la estimulación sensorial 
-          p.list Mejoran el funcionamiento familiar
-          p.list Fomentan la integración
-          br
+          h1 Programas #[strong en linea ] 
+          p Debido a la actual emergencia sanitaria generada en todo el mundo por el  #[strong SARS-CoV-2 ] , desarrollamos el proyecto Programas en línea.
+          p Nuestros programas en línea aportan beneficios directos a la calidad de vida y a la salud durante esta etapa de confinamiento. Manteniendo la calidad en nuestros tratamientos.
+          ul
+            li(type="none") Facilitan el aprendizaje
+            li(type="none") Generan una interacción saludable 
+            li(type="none") Contribuyen al bienestar físico, social y mental 
+            li(type="none") Incrementan la estimulación sensorial 
+            li(type="none") Mejoran el funcionamiento familiar
+            li(type="none") Fomentan la integración
           p Un proyecto pensado para estar cerca de ti
       div.programs
         div.program
-          div.programDetail
+          
+          h2 Vinculo 
+          span
             +vinculo 
-            div.programInfo Programa de acompañamiento en línea. Psicoeducación y psicoterapia asistida.
-          button.moreInfo(onclick="window.location.href='idea.html'") MAS INFORMACION 
+          div.program-info Programa de acompañamiento en línea. Psicoeducación y psicoterapia asistida.
+          a(href='idea.html') MAS INFORMACION 
         div.program
-          div.programDetail
+          
+          h2 Idea 
+          span
             +idea 
-            div.programInfo Educación, entrenamiento y modificación conductual en línea.
-          button.moreInfo(onclick="window.location.href='idea.html'")  MAS INFORMACION
+          div.program-info Educación, entrenamiento y modificación conductual en línea.
+          a(href='idea.html')  MAS INFORMACION
         div.program
-          div.programDetail
+          
+          h2 Proyecto perro
+          span
             +proyectoPerro
-            div.programInfo Videoconsulta especializada en adopción, bienestar y tenencia responsable.
-          button.moreInfo(onclick="window.location.href='idea.html'") MAS INFORMACION
-      include footer.pug
+          div.program-info Videoconsulta especializada en adopción, bienestar y tenencia responsable.
+          a(href='idea.html') MAS INFORMACION
+      include includes/footer.pug
         
          
           

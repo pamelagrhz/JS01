@@ -1,30 +1,30 @@
-include mixins.pug
-<!DOCTYPE html>
-html(lang="en")
+include includes/mixins.pug
+doctype html
+html(lang="es")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" type="text/css" href="./css/styles.css")
     script(src="https://kit.fontawesome.com/8994a44ae2.js" crossorigin="anonymous")
-    title Document
+    title Juan Serrat
   body
-    div.card
-      include header.pug
+  
+      include includes/header.pug
       div.idea
-        img(src="../src/img/foto-idea.jpg")
+        img(src="img/foto-idea.jpg")
         div.details
           div.Logo
             svg
              +idea
-          div.ideaDetails
+          div.idea-details
             P Debido a la actual emergencia sanitaria generada en todo el mundo por el  #[strong SARS-CoV-2 ]  Desarrollamos el proyecto Programas en línea. 
             p Aportando beneficios directos a la calidad de vida y a la salud durante esta etapa de confinamiento. Manteniendo la calidad en nuestros tratamientos.
-          button.appointment 
-            div 
-              i.fab.fa-whatsapp.icons
-            div
-              label   AGENDA UNA CITA
-      include footer.pug
+          a(href="")
+            i.fab.fa-whatsapp.icons
+            label   AGENDA UNA CITA
+            
+              
+      include includes/footer.pug
         
          
           

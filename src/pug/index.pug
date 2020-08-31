@@ -1,39 +1,36 @@
-<!DOCTYPE html>
-html(lang="en")
+doctype html
+html(lang="es")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" type="text/css" href="./css/styles.css")
+    link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap' rel='stylesheet')
     script(src="https://kit.fontawesome.com/8994a44ae2.js" crossorigin="anonymous")
-    title Document
+    title Juan Serrat
   body
-    div.card
-      include header.pug
-      div.content
-        div.picture
-          div.pam 
-            a(href="http://www.google.com")
-              img(src="../src/img/logo-pam.svg")
-            a(href="http://www.google.com")
-              img(src="../src/img/logo-vinculo.svg")
-            a(href="http://www.google.com")
-             img(src="../src/img/logo-idea.svg")
-            a(href="http://www.google.com")
-              img(src="../src/img/logo-labradores.svg")
-        div.info
-          div.onLine
-            a(href="programas-en-linea.html")
-              img.bars(src="../src/img/barras-programas-en-linea.svg")
-            div.onLineTxt
-              p Programas 
-              br
-              p.online en linea
-          div.details
-            div.detailsContent
+      include includes/header.pug
+      div.picture
+        div.pam 
+          a(href="#")
+            img(src="img/logo-pam.svg")
+          a(href="#")
+            img(src="img/logo-vinculo.svg")
+          a(href="#")
+            img(src="img/logo-idea.svg")
+          a(href="#")
+            img(src="img/logo-labradores.svg")
+      div.info
+        div.on-line
+          a(href="programas-en-linea.html")
+            img.bars(src="img/barras-programas-en-linea.svg")
+          div.on-line-txt
+            p Programas 
+            h2.online en linea
+        div.details
+          div.details-content
                 p Psicoeducación y psicoterapia asistida con animales 
                 p Etología educación y entrenamiento animal 
                 p Perros de Asistencia
                 p  especializada del Labrador.
- 
-      include footer.pug
-        
+      include includes/footer.pug
+      
