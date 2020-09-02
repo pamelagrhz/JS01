@@ -1,14 +1,28 @@
  @import "../../node_modules/normalize-scss/sass/normalize";
- $margin-content: 0 5%;
+ $margin-content: 0 6%;
  body {
      font-family: 'Roboto', sans-serif;
-     font-size: 1em;
+     font-size: 17px;
      line-height: 1.5em;
      max-width: 1300px;
      margin: $margin-content;
  }
  
+ p {
+     font-size: 1.3em;
+ }
+ 
+ h2 {
+     font-size: 1.8em;
+ }
+ 
+ h1 {
+     font-size: 2.2em;
+     margin-top: .3em;
+ }
+ 
  a {
+     font-size: 1em;
      text-decoration: none;
      color: black;
      &:visited {
@@ -19,8 +33,7 @@
  .header {
      display: flex;
      flex-direction: row;
-     margin: 0 8%;
-     ;
+     margin: 0 5%;
      height: 15%;
  }
  
@@ -29,7 +42,8 @@
      display: flex;
      justify-content: flex-start;
      a {
-         width: 70%;
+         width: 60%;
+         padding: 3% 0;
      }
  }
  
@@ -78,21 +92,27 @@
      display: flex;
      align-items: center;
      a {
-         width: 55%;
+         width: 50%;
          img {
-             width: 100%;
+             width: 95%;
          }
+     }
+     div {
+         line-height: .3em;
+         margin-top: .5em;
+         font-size: 1.2em;
      }
  }
  
  .on-line-details {
+     margin-top: .5em;
      width: 50%;
  }
  
  .advertisement {
      background-color: red;
      color: white;
-     padding: 4%;
+     padding: 4% 7%;
      h1 {
          font-weight: lighter;
      }
@@ -113,7 +133,7 @@
  }
  
  .program {
-     width: 300px;
+     width: 317px;
      display: flex;
      flex-direction: column;
      padding: 2%;
@@ -121,6 +141,7 @@
          display: none;
      }
      a {
+         margin-top: 6%;
          background-color: black;
          color: white;
          border-radius: 8px;
@@ -201,7 +222,7 @@
      }
  }
  
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 700px) {
      .header {
          height: 30% !important;
      }
@@ -216,9 +237,6 @@
          .on-line,
          .on-line-details {
              width: 100%;
-         }
-         .on-line {
-             width: 80%;
          }
      }
  }
