@@ -38,7 +38,7 @@ gulp.task('browserSync', function() {
     });
 });
 gulp.task("watch", function() {
-    gulp.watch("./src/sass/*", ["sass"], browsersync.reload);
-    gulp.watch("./src/pug/*", ["pug"], browsersync.reload);
+    gulp.watch("./src/sass/*", ["sass", browsersync.reload]);
+    gulp.watch("./src/pug/*", ["pug", browsersync.reload]);
 });
 gulp.task("default", ["sass", "pug", "browserSync", "watch"]);
