@@ -1,19 +1,34 @@
+ // Imports
  @import "../../node_modules/normalize-scss/sass/normalize";
- $margin-content: 0 6%;
+ // -----------------------------
+
+ // Vars
+ $margin-content: 6%;
+ // -----------------------------
+
+ // General
  body {
      font-family: 'Roboto', sans-serif;
      font-size: 17px;
      line-height: 1.5em;
      max-width: 1300px;
-     margin: $margin-content;
+     margin: 0 $margin-content;
  }
  
  p {
-     font-size: 1.3em;
+     font-size: 1em;
+     margin-bottom: 20px;
  }
  
  h2 {
-     font-size: 1.8em;
+     font-size: 1.4em;
+     line-height: 1.5em;
+     font-weight: normal;
+     span {
+        font-size: 1.8em;
+        display: inline-block;
+        font-weight: bold;
+     }
  }
  
  h1 {
@@ -29,6 +44,16 @@
          color: black;
      }
  }
+
+ ul {
+     margin: 0;
+     padding-inline-start: 0px;
+    li {
+        list-style: none;
+    }
+ }
+ 
+ // -----------------------------
  
  .header {
      display: flex;
@@ -41,6 +66,9 @@
      width: 50%;
      display: flex;
      justify-content: flex-start;
+     img {
+         min-width: 180px;
+     }
      a {
          width: 60%;
          padding: 3% 0;
@@ -61,13 +89,12 @@
      justify-content: center;
      align-items: center;
      padding: 40% 0 0% 0;
+     
+     background: url("../img/foto-portada.jpg") center center no-repeat;
      background-size: cover;
-     background-position: center 0;
-     background-image: url("../img/foto-portada.jpg");
-     background-size: 100%;
  }
  
- .pam {
+ .hero {
      display: flex;
      justify-content: space-around;
      padding-bottom: 3%;
@@ -76,8 +103,12 @@
          width: 25%;
          display: flex;
          justify-content: center;
+         transition: all .3s;
          img {
              width: 80%;
+         }
+         &:hover {
+            transform: scale(1.2)
          }
      }
  }
@@ -85,23 +116,25 @@
  .info {
      display: flex;
      justify-content: space-between;
-     margin: 6% 9%;
+     margin: $margin-content $margin-content;
  }
  
  .on-line {
-     display: flex;
-     align-items: center;
+    //  width: 40%;
      a {
-         width: 50%;
-         img {
-             width: 95%;
-         }
+        display: flex;
+        align-items: center;   
      }
-     div {
-         line-height: .3em;
-         margin-top: .5em;
-         font-size: 1.2em;
+     h2 {
+         margin: 0 $margin-content/3;
+         display: inline-block;
+         width: 170px;
      }
+
+     img {
+         height: 100px;
+     }
+     
  }
  
  .on-line-details {
@@ -125,18 +158,19 @@
  }
  
  .programs {
-     padding: 0 3%;
+     padding: 0 $margin-content;
      justify-content: center;
      display: flex;
-     flex-flow: row wrap;
-     justify-content: space-around;
+    //  flex-flow: row wrap;
+    //  justify-content: space-around;
  }
  
  .program {
-     width: 317px;
+    width: 33%;
      display: flex;
-     flex-direction: column;
+     flex-wrap: wrap;
      padding: 2%;
+     align-items: stretch;
      h2 {
          display: none;
      }
@@ -148,6 +182,9 @@
          padding: .7rem 1rem;
          text-align: center;
          width: 70%;
+         align-self: flex-end;
+         font-size: .9em;
+         letter-spacing: 1px;
      }
      svg {
          width: 200px;
@@ -156,8 +193,8 @@
  }
  
  .program-info {
-     margin: 30px 0;
-     height: 50px;
+     margin: 0 0 30px 0;
+    //  height: 50px;
  }
  
  .idea {
@@ -167,15 +204,17 @@
  }
  
  .idea-details {
-     margin: $margin-content;
+     margin: 0 $margin-content;
      a {
          background-color: black;
          color: white;
          border-radius: 8px;
          padding: 10px 30px;
-         display: flex;
+         display: inline-block;
          align-items: center;
-         width: 11em;
+        //  width: 11em;
+         font-size: .9em;
+         letter-spacing: 1px;
          label {
              padding-left: 10px;
          }
@@ -186,7 +225,8 @@
  }
  
  .idea-image {
-     width: 30%;
+     width: 250px;
+     margin-left: -20px;
  }
  
  .idea-txt {
@@ -201,7 +241,7 @@
      flex-direction: column;
      align-items: center;
      p {
-         font-size: 10px;
+         font-size: .8em;
          color: gray;
      }
  }
@@ -215,11 +255,21 @@
  .icon {
      padding: 6px;
  }
- 
+
+ // Responsive
  @media (max-width: 920px) {
+
      .picture {
          padding: 50% 0 0% 0;
      }
+
+     .on-line {
+         margin-bottom: $margin-content;
+         img {
+             height: 80px;
+         }
+     }
+
  }
  
  @media screen and (max-width: 700px) {
@@ -238,5 +288,21 @@
          .on-line-details {
              width: 100%;
          }
+         .on-line  {
+            img {
+                height: 65px;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+             
+         }
+     }
+     .programs {
+         flex-wrap: wrap;
+     }
+     .program {
+         width: 80%;
      }
  }
+ // -----------------------------
