@@ -4,13 +4,37 @@ html(lang="es")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" type="text/css" href="./css/styles.css")
-    link(href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet')
     script(src="https://kit.fontawesome.com/8994a44ae2.js" crossorigin="anonymous")
     title Juan Serrat
+
+    link(rel='apple-touch-icon', sizes='57x57', href='/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/favicon-16x16.png')
+    link(rel='manifest', href='/manifest.json')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
+    meta(name='theme-color', content='#ffffff')
+
+
   body
-      include includes/header.pug
+      //- Header
+      include includes/header
+      //- -----------------------
+
+      //- Hero
       div.picture
-        div.pam 
+        div.hero
           a(href="#")
             img(src="img/logo-pam.svg")
           a(href="#")
@@ -19,17 +43,24 @@ html(lang="es")
             img(src="img/logo-idea.svg")
           a(href="#")
             img(src="img/logo-labradores.svg")
+      //- -----------------------
+
+      //- Info 
       div.info
         div.on-line
           a(href="programas-en-linea.html")
             img.bars(src="img/barras-programas-en-linea.svg")
-          div
-            div Programas 
-            h2.online en línea
+            h2 Programas 
+              span en línea
         div.on-line-details
-          div Psicoeducación y psicoterapia asistida con animales 
-          div Etología educación y entrenamiento animal 
-          div Perros de Asistencia
-          div Cría especializada del Labrador.
-      include includes/footer.pug
+          ul 
+            li Psicoeducación y psicoterapia asistida con animales 
+            li Etología educación y entrenamiento animal 
+            li Perros de Asistencia
+            li Cría especializada del Labrador.
+      //- -----------------------
+
+      //- Footer
+      include includes/footer
+      //- -----------------------
       
